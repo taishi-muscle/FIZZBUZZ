@@ -1,15 +1,11 @@
 function show(num)
 {
-    if(num%5 == 0 && num%3 == 0)
+    if(num%11 == 0 && num%7 == 0 && num%5 == 0 && num%3 == 0)
     {
         textTemp = "FizzBuzz"
         
     }
-    else if(num%5 == 0)
-    {
-        textTemp = "Buss"
-    }
-    else if(num%3 == 0)
+    else if(num%11 == 0)
     {
         textTemp = "Fizz"
     }
@@ -17,7 +13,11 @@ function show(num)
     {
         textTemp = "Fizz"
     }
-    else if(num%11 == 0)
+    else if(num%5 == 0)
+    {
+        textTemp = "Buss"
+    }
+    else if(num%3 == 0)
     {
         textTemp = "Fizz"
     }
