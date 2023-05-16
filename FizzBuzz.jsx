@@ -1,8 +1,9 @@
 function show(num)
 {
+    textTemp = "--------------------" + "\n" +  "     "
     if(num%5 == 0 && num%3 == 0)
     {
-        textTemp = "FizzBuzz"
+        textTemp += "FizzBuzz"
         
     }
     else
@@ -10,23 +11,23 @@ function show(num)
         
         switch(num){
          case 2: 
-            textTemp = "偶数です"
+            textTemp += "偶数です"
             break; 
          case 3: 
-            textTemp = "Fizz"
+            textTemp += "Fizz"
             break; 
-         
          case 5: 
-            textTemp = "Buss"
+            textTemp += "Buss"
             break; 
          case 7: 
-            textTemp = "7の倍数です"
+            textTemp += "7の倍数です"
             break;    
-        default :
-            textTemp = str(num)
+         default :
+            textTemp += str(num) + "です。"
             break; 
         }
     }
 
+    textTemp += "\n" +  "--------------------"
     return textTemp
 }
