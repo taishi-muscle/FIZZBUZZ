@@ -5,17 +5,27 @@ function show(num)
         textTemp = "FizzBuzz"
         
     }
-    else if(num%5 == 0)
-    {
-        textTemp = "Buss"
-    }
-    else if(num%3 == 0)
-    {
-        textTemp = "Fizz"
-    }
     else
     {
-        textTemp = str(num)
+        
+        switch(num){
+         case 2: 
+            textTemp = "偶数です"
+            break; 
+         case 3: 
+            textTemp = "Fizz"
+            break; 
+         
+         case 5: 
+            textTemp = "Buss"
+            break; 
+         case 7: 
+            textTemp = "7の倍数です"
+            break;    
+        default :
+            textTemp = str(num)
+            break; 
+        }
     }
 
     return textTemp
